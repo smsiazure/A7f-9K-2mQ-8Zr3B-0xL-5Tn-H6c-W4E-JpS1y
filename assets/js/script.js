@@ -121,9 +121,3 @@ document.addEventListener('keydown', (event) => {
         calculator.style.display = 'none'; // Hide the calculator when Escape key is pressed
     }
 });
-
-
-document.getElementById("findBtn").addEventListener("click", function () {
-    // Trigger native WebView find
-    window.find();
-});
