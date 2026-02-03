@@ -10,7 +10,7 @@
 }
 
 .hex-brick {
-  background: #FF0000;
+  background: #234570;
   width: 30px;
   height: 17px;
   position: absolute;
@@ -324,14 +324,14 @@
 
 @keyframes fade00 {
   0% {
-    background: #FF0000;
+    background: #234570;
   }
 
   50% {
-    background: #FF0000;
+    background: #234570;
   }
 
   100% {
-    background: #FF0000;
+    background: #234570;
   }
 }
