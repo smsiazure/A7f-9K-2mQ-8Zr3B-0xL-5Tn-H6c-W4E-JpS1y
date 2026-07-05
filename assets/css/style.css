@@ -86,3 +86,30 @@ body {
     z-index: 9999;
   }
 
+button {
+    font-size: 17px;
+    padding: 0.5em 2em;
+    border: none;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+    background: navyblue;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    background: linear-gradient(
+        90deg,
+        rgba(30,144,255,1) 0%,
+        rgba(0,212,255,1) 100%
+    );
+}
+
+button:active {
+    transform: translateY(3px);
+}
+
+a {
+    text-decoration: none;
+}
