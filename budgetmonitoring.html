@@ -20,10 +20,23 @@
 <style>
 .page-wrapper iframe {
   width: 87vw;      /* default for PC */
-  height: 103vh;
+  height: 100vh;
   border: 0;
   overflow-y: hidden;
   margin-top: -60px;
+}
+ .footer {
+  position:fixed;
+ bottom:0;
+ left:0;
+ width:80%;
+ height:34px;
+ background:#F8FAFD;
+ display:flex;
+ align-items:center;
+ padding:0 10px;
+ font-size:12px;
+ z-index:1000;
 }
 
 /* Mobile view */
@@ -31,7 +44,11 @@
   .page-wrapper iframe {
     width: 100vw;
     margin-top: 0px;
+    height: 94vh;
   }
+ .footer {
+ width:65%;
+}
 }
 </style>
 </head>
@@ -233,16 +250,17 @@
 <div class="header">
 
 <div class="header-left active">
-<a onclick="location.href='javascript:void(0)';" class="logo" style="cursor: default;">
-<img src="assets/img/logo.png">
+<a onclick="location.href='index.html';" class="logo" style="cursor: default;">
+<img src="assets/img/logo.png" alt="">
 </a>
-
-<a onclick="location.href='javascript:void(0)';" class="logo-small" style="cursor: default;">
-<img src="assets/img/favicon.png">
+<a onclick="location.href='index.html';" class="logo-small" style="cursor: default;">
+<img src="assets/img/favicon.png" alt="">
+</a>
+<a id="toggle_btn" href="javascript:void(0);">
 </a>
 </div>
 
-<a id="mobile_btn" class="mobile_btn" href="#">
+<a id="mobile_btn" class="mobile_btn" href="#sidebar">
 <span class="bar-icon">
 <span></span>
 <span></span>
@@ -252,8 +270,8 @@
 
 <ul class="nav user-menu">
 <h2 class="page-heading"></h2>
-</ul>
 
+</ul>
 
 <div class="sidebar" id="sidebar">
 <div class="sidebar-inner slimscroll">
@@ -292,7 +310,7 @@
 <li class="submenu">
 <a href="javascript:void(0);"><img src="assets/img/icons/garbage.png" style="height: 23px;width: auto;"  alt="img"><span>Garbage Bag Report</span> <span class="menu-arrow"></span></a>
 <ul>
-<li><a href="garbagebagreport.html">Garbage Records</a></li>
+<li><a href="garbagebagreport.html" class="active">Garbage Records</a></li>
 <li><a href="garbagebagreportform.html">Garbage Form Input</a></li>
 </ul>
 </li>
@@ -308,7 +326,7 @@
 <li class="submenu">
 <a href="javascript:void(0);"><img src="assets/img/icons/files.png" style="height: 23px;width: auto;"  alt="img"><span>Files</span> <span class="menu-arrow"></span></a>
 <ul>
-<li><a href="scannedfiles.html" class="active">Scanned Files</a></li>
+<li><a href="scannedfiles.html">Scanned Files</a></li>
 <li><a href="forms.html">Forms</a></li>
 </ul>
 </li>
@@ -327,14 +345,13 @@
 </div>
 </div>
 </div>
+
 <div class="page-wrapper">
+<iframe style="border: 0; overflow-y: hidden;" src="https://docs.google.com/spreadsheets/d/1MmbZ6P7y1HZHWJxaRx6vdUUipd8rD4RBEd_p57-wBC8/edit?usp=sharing?widget=true&amp;rm=minimal&headers=false;gid=317365269#gid=317365269" frameborder="0"></iframe>
 
-<iframe src="https://lookerstudio.google.com/embed/reporting/6c041476-de83-429b-8779-c249ab467e8e/page/eiemF" frameborder="0" style="border:0;" allowfullscreen sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>
-
-
+<div class="footer"></div>
 </div>
 
-</div>
 
 <script src="assets/js/jquery-3.6.0.min.js"></script>
 <script src="assets/js/feather.min.js"></script>
